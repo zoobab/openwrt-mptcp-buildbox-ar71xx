@@ -26,6 +26,6 @@ RUN su -c "cd ~/openwrt && make defconfig" build
 RUN su -c "cd ~/openwrt && make prereq" build
 RUN cat /proc/cpuinfo
 RUN cat /proc/meminfo
-RUN su -c "cd ~/openwrt && make -j4" build
+RUN su -c "cd ~/openwrt && make -j1" build
 
 # EOF
